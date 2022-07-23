@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+$lightGrey:hsl(217,
+12%,
+63%);
+$medGrey:hsl(216,
+12%,
+54%);
+$darkBlue:hsl(213,
+19%,
+18%);
+$darkBlueBold:hsl(216,
+12%,
+8%);
+$orange:hsl(25,
+97%,
+53%);
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Overpass', sans-serif;
+}
+
+body {
+    background-color: $darkBlueBold;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div {
+    background-color: $darkBlue;
+    max-width: 400px;
+    margin: auto;
+    width: 95%;
+    border-radius: 15px;
+    padding: 20px;
+    color: white;
+    h2 {
+        font-size: 28px,
+    }
+    &.two {
+        display: none;
+        text-align: center;
+        .res {
+            color: $orange;
+            padding: 10px;
+            background-color: #222933;
+            width: fit-content;
+            margin: auto;
+            margin-top: 15px;
+        }
+    }
+}
+
+ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    li {
+        list-style: none;
+        cursor: pointer;
+        &:hover {
+            background-color: $orange;
+            color: white;
+        }
+        background-color: $darkBlueBold;
+        color: $medGrey;
+        min-width: 40px;
+        min-height: 40px;
+        max-height: 70px;
+        max-width: 70px;
+        line-height: 41px;
+        border-radius: 50%;
+        text-align: center;
+        &.focused {
+            background-color: $lightGrey;
+            color: white;
+        }
+    }
+}
+
+h2,
+p {
+    margin: 20px 0;
+}
+
+p {
+    line-height: 1.3;
+}
+
+button {
+    background-color: $orange;
+    text-transform: uppercase;
+    color: white;
+    text-align: center;
+    display: inline-block;
+    padding: 10px;
+    letter-spacing: 2px;
+    // font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 20px;
+    border: none;
+    margin-top: 20px;
+    transition: .4s;
+    &:hover {
+        background-color: white;
+        color: $orange
+    }
+}
+
+;
